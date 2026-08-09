@@ -1,0 +1,539 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- == Adder-X .50 BMG == -->
+    <ThingDef ParentName="BaseBullet">
+      <defName>Ammo_127mm</defName>
+      <label>.50 BMG</label>
+      <graphicData>
+        <texPath>Things/Projectile/Bullet_Big</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <projectile>
+        <flyOverhead>false</flyOverhead>
+        <damageDef>Bullet</damageDef>
+        <damageAmountBase>22</damageAmountBase>
+        <armorPenetrationBase>0.68</armorPenetrationBase>
+        <stoppingPower>1.00</stoppingPower>
+        <speed>100</speed> 
+      </projectile>
+    </ThingDef>
+
+	<!-- ==== Adder-X .50 BMG ==== -->
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>OIE_Adder-X_127_mm_Deployable</defName>
+        <label>Adder-X .50 BMG (Portable)</label>
+        <description>A compact automated turret featuring a reinforced armature with a forward-mounted sensor and a .50 cal. The weapon is rigidly linked to the main sensor unit, allowing precise tracking and continuous fire.
+
+Portable and classic but required a lot of components to construct.</description>
+        <graphicData>
+            <texPath>Things/Buildings/Deployable/Adder-X/Adder-X_127_mm/Adder-X_12.7_mm_minified</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+		<recipeMaker>
+			<researchPrerequisite>Fabrication</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>5</stackLimit>
+        <statBases>
+            <WorkToMake>24000</WorkToMake>
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>700</MarketValue>
+            <Mass>12</Mass>
+            <Flammability>0.5</Flammability>
+            <CG_DeployableCapacity>5</CG_DeployableCapacity>
+        </statBases>
+		<costList>
+			<Steel>165</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+        <comps>
+            <li Class="CrimsonGridFramework.CompProperties_DeployableItem">
+                <buildingDef>OIE_Adder-X_127_mm_ActiveTurret</buildingDef>
+                <capacityCost>1</capacityCost>
+                <installDuration>300</installDuration>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>OIE_Adder-X_127_mm_ActiveTurret</defName>
+        <label>Adder-X .50 BMG</label>
+        <description>A compact automated turret featuring a reinforced armature with a forward-mounted sensor and a .50 cal. The weapon is rigidly linked to the main sensor unit, allowing precise tracking and continuous fire.
+
+Portable and classic but required a lot of components to construct.</description>
+        <thingClass>Building_TurretGun</thingClass>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <graphicData>
+            <texPath>Things/Buildings/Deployable/Adder-X/Adder-X_base</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
+            <damageData>
+                <rect>(0.2,0.2,0.6,0.6)</rect>
+            </damageData>
+        </graphicData>
+        <uiIconPath>UI/Adder-X_127_mm</uiIconPath>
+        <uiIconScale>3</uiIconScale>
+        <altitudeLayer>Building</altitudeLayer>
+        <stealable>false</stealable>
+        <rotatable>false</rotatable>
+        <statBases>
+            <MaxHitPoints>380</MaxHitPoints>
+            <Flammability>0.5</Flammability>
+            <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <comps>
+			<li Class="CompProperties_Explosive">
+				<wickTicks>240</wickTicks>
+				<explosiveRadius>2.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+			</li>
+            <li Class="CrimsonGridFramework.CompProperties_DeployableBuilding">
+                <turnToInactiveWhenDestroyed>True</turnToInactiveWhenDestroyed>
+                <inactiveDef>OIE_Adder-X_127_mm_InactiveTurret</inactiveDef>
+                <lifespanTicks>60000</lifespanTicks>
+            </li>
+            <li Class="CompProperties_Forbiddable" />
+            <li Class="CompProperties_Flickable" />
+        </comps>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <fillPercent>0.4</fillPercent>
+        <hasTooltip>true</hasTooltip>
+        <building>
+            <combatPower>145</combatPower>
+            <ai_combatDangerous>true</ai_combatDangerous>
+            <turretGunDef>OIE_Adder-X_127_mm_barrel</turretGunDef>
+            <turretBurstCooldownTime>4.8</turretBurstCooldownTime>
+            <turretTopDrawSize>3</turretTopDrawSize>
+        </building>
+        <placeWorkers>
+            <li>PlaceWorker_TurretTop</li>
+            <li>PlaceWorker_ShowTurretRadius</li>
+        </placeWorkers>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>OIE_Adder-X_127_mm_InactiveTurret</defName>
+        <label>Adder-X .50 BMG</label>
+        <description>An inactive compact automated turret.</description>
+        <graphicData>
+            <texPath>Things/Buildings/Deployable/Adder-X/Adder-X_127_mm/Adder-X_12.7_mm_destroyed</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(3,3)</drawSize>
+            <color>(1,1,1)</color>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <statBases>
+            <MaxHitPoints>380</MaxHitPoints>
+            <Flammability>0.5</Flammability>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseWeaponTurret">
+        <defName>OIE_Adder-X_127_mm_barrel</defName>
+        <label>Adder-X .50 BMG</label>
+        <graphicData>
+            <texPath>Things/Buildings/Deployable/Adder-X/Adder-X_127_mm/Adder-X_12.7_mm_barrel</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.88</AccuracyShort>
+			<AccuracyMedium>0.82</AccuracyMedium>
+			<AccuracyLong>0.50</AccuracyLong>
+			<RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Mass>5</Mass>
+            <Flammability>0</Flammability>
+        </statBases>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <defaultProjectile>Ammo_127mm</defaultProjectile>
+                <warmupTime>0</warmupTime>
+                <range>42</range>
+                <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+                <burstShotCount>8</burstShotCount>
+                <soundCast>OIE_shot_127mm</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>12</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+
+    <!-- == Adder-X 40 mm == -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>Ammo_40mm</defName>
+		<label>40mm</label>
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>32</damageAmountBase>
+			<explosionRadius>1.9</explosionRadius>
+			<armorPenetrationBase>0.16</armorPenetrationBase>
+			<stoppingPower>1.60</stoppingPower>
+			<speed>90</speed> 
+		</projectile>
+	</ThingDef>
+
+	<!-- ==== Adder-X 40 mm ==== -->
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>OIE_Adder-X_40_mm_Deployable</defName>
+        <label>Adder-X 40 mm (Portable)</label>
+        <description>A compact automated turret featuring a reinforced armature with a forward-mounted sensor and a .50 cal. The weapon is rigidly linked to the main sensor unit, allowing precise tracking and continuous fire.
+
+Portable and a good crowd control, but required a lot of components to construct.</description>
+        <graphicData>
+            <texPath>Things/Buildings/Deployable/Adder-X/Adder-X_40_mm/Adder-X_40_mm_minified</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+		<recipeMaker>
+			<researchPrerequisite>Fabrication</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>5</stackLimit>
+        <statBases>
+            <WorkToMake>24000</WorkToMake>
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>900</MarketValue>
+            <Mass>12</Mass>
+            <Flammability>0.5</Flammability>
+            <CG_DeployableCapacity>5</CG_DeployableCapacity>
+        </statBases>
+		<costList>
+			<Steel>185</Steel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+		</costList>
+        <comps>
+            <li Class="CrimsonGridFramework.CompProperties_DeployableItem">
+                <buildingDef>OIE_Adder-X_40_mm_ActiveTurret</buildingDef>
+                <capacityCost>1</capacityCost>
+                <installDuration>300</installDuration>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>OIE_Adder-X_40_mm_ActiveTurret</defName>
+        <label>Adder-X 40 mm</label>
+        <description>A compact automated turret featuring a reinforced armature with a forward-mounted sensor and a .50 cal. The weapon is rigidly linked to the main sensor unit, allowing precise tracking and continuous fire.
+
+Portable and a good crowd control, but required a lot of components to construct.</description>
+        <thingClass>Building_TurretGun</thingClass>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <graphicData>
+            <texPath>Things/Buildings/Deployable/Adder-X/Adder-X_base</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
+            <damageData>
+                <rect>(0.2,0.2,0.6,0.6)</rect>
+            </damageData>
+        </graphicData>
+        <uiIconPath>UI/Adder-X_40_mm</uiIconPath>
+        <uiIconScale>3</uiIconScale>
+        <altitudeLayer>Building</altitudeLayer>
+        <stealable>false</stealable>
+        <rotatable>false</rotatable>
+        <statBases>
+            <MaxHitPoints>380</MaxHitPoints>
+            <Flammability>0.5</Flammability>
+            <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <comps>
+			<li Class="CompProperties_Explosive">
+				<wickTicks>240</wickTicks>
+				<explosiveRadius>2.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+			</li>
+            <li Class="CrimsonGridFramework.CompProperties_DeployableBuilding">
+                <turnToInactiveWhenDestroyed>True</turnToInactiveWhenDestroyed>
+                <inactiveDef>OIE_Adder-X_127_mm_InactiveTurret</inactiveDef>
+                <lifespanTicks>60000</lifespanTicks>
+            </li>
+            <li Class="CompProperties_Forbiddable" />
+            <li Class="CompProperties_Flickable" />
+        </comps>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <fillPercent>0.4</fillPercent>
+        <hasTooltip>true</hasTooltip>
+        <building>
+            <combatPower>145</combatPower>
+            <ai_combatDangerous>true</ai_combatDangerous>
+            <turretGunDef>OIE_Adder-X_40_mm_barrel</turretGunDef>
+            <turretBurstCooldownTime>2.55</turretBurstCooldownTime>
+            <turretTopDrawSize>3</turretTopDrawSize>
+        </building>
+        <placeWorkers>
+            <li>PlaceWorker_TurretTop</li>
+            <li>PlaceWorker_ShowTurretRadius</li>
+        </placeWorkers>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>OIE_Adder-X_40_mm_InactiveTurret</defName>
+        <label>Adder-X 40 mm</label>
+        <description>An inactive compact automated turret.</description>
+        <graphicData>
+            <texPath>Things/Buildings/Deployable/Adder-X/Adder-X_40_mm/Adder-X_40_mm_destroyed</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(3,3)</drawSize>
+            <color>(1,1,1)</color>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <statBases>
+            <MaxHitPoints>380</MaxHitPoints>
+            <Flammability>0.5</Flammability>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseWeaponTurret">
+        <defName>OIE_Adder-X_40_mm_barrel</defName>
+        <label>Adder-X 40 mm</label>
+        <graphicData>
+            <texPath>Things/Buildings/Deployable/Adder-X/Adder-X_40_mm/Adder-X_40_mm_barrel</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+			<AccuracyTouch>0.80</AccuracyTouch>
+			<AccuracyShort>0.82</AccuracyShort>
+			<AccuracyMedium>0.72</AccuracyMedium>
+			<AccuracyLong>0.40</AccuracyLong>
+			<RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Mass>5</Mass>
+            <Flammability>0</Flammability>
+        </statBases>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <defaultProjectile>Ammo_40mm</defaultProjectile>
+                <warmupTime>0</warmupTime>
+                <range>42</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<ticksBetweenBurstShots>26</ticksBetweenBurstShots>
+				<burstShotCount>8</burstShotCount>
+                <soundCast>OIE_shot_grenade</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>12</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+
+	<!-- ==== Adder-X TOW ==== -->
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>OIE_Adder-X_TOW_Deployable</defName>
+        <label>Adder-X TOW (Portable)</label>
+        <description>A compact automated turret featuring a reinforced armature with a forward-mounted sensor and a .50 cal. The weapon is rigidly linked to the main sensor unit, allowing precise tracking and continuous fire.
+
+Portable and classic but required a lot of components to construct.</description>
+        <graphicData>
+            <texPath>Things/Buildings/Deployable/Adder-X/Adder-X_TOW/Adder-X_TOW_minified</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
+        </graphicData>
+		<recipeMaker>
+			<researchPrerequisite>Fabrication</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <stackLimit>5</stackLimit>
+        <statBases>
+            <WorkToMake>24000</WorkToMake>
+            <MaxHitPoints>50</MaxHitPoints>
+            <MarketValue>150</MarketValue>
+            <Mass>12</Mass>
+            <Flammability>0.5</Flammability>
+            <CG_DeployableCapacity>5</CG_DeployableCapacity>
+        </statBases>
+		<costList>
+			<Steel>125</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+        <comps>
+            <li Class="CrimsonGridFramework.CompProperties_DeployableItem">
+                <buildingDef>OIE_Adder-X_TOW_ActiveTurret</buildingDef>
+                <capacityCost>1</capacityCost>
+                <installDuration>300</installDuration>
+            </li>
+        </comps>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>OIE_Adder-X_TOW_ActiveTurret</defName>
+        <label>Adder-X TOW</label>
+        <description>A compact automated turret featuring a reinforced armature with a forward-mounted sensor and a .50 cal. The weapon is rigidly linked to the main sensor unit, allowing precise tracking and continuous fire.
+
+Portable and classic but required a lot of components to construct.</description>
+        <thingClass>Building_TurretGun</thingClass>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <graphicData>
+            <texPath>Things/Buildings/Deployable/Adder-X/Adder-X_base</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,3)</drawSize>
+            <damageData>
+                <rect>(0.2,0.2,0.6,0.6)</rect>
+            </damageData>
+        </graphicData>
+        <uiIconPath>UI/Adder-X_TOW</uiIconPath>
+        <uiIconScale>3</uiIconScale>
+        <altitudeLayer>Building</altitudeLayer>
+        <stealable>false</stealable>
+        <rotatable>false</rotatable>
+        <statBases>
+            <MaxHitPoints>380</MaxHitPoints>
+            <Flammability>0.5</Flammability>
+            <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+        </statBases>
+        <tickerType>Normal</tickerType>
+        <comps>
+			<li Class="CompProperties_Explosive">
+				<wickTicks>240</wickTicks>
+				<explosiveRadius>2.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<chanceNeverExplodeFromDamage>0.5</chanceNeverExplodeFromDamage>
+			</li>
+            <li Class="CrimsonGridFramework.CompProperties_DeployableBuilding">
+                <turnToInactiveWhenDestroyed>True</turnToInactiveWhenDestroyed>
+                <inactiveDef>OIE_Adder-X_TOW_InactiveTurret</inactiveDef>
+                <lifespanTicks>60000</lifespanTicks>
+            </li>
+            <li Class="CompProperties_Forbiddable" />
+            <li Class="CompProperties_Flickable" />
+        </comps>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <fillPercent>0.4</fillPercent>
+        <hasTooltip>true</hasTooltip>
+        <building>
+            <combatPower>145</combatPower>
+            <ai_combatDangerous>true</ai_combatDangerous>
+            <turretGunDef>OIE_Adder-X_TOW_barrel</turretGunDef>
+            <turretBurstCooldownTime>4.8</turretBurstCooldownTime>
+            <turretTopDrawSize>3</turretTopDrawSize>
+        </building>
+        <placeWorkers>
+            <li>PlaceWorker_TurretTop</li>
+            <li>PlaceWorker_ShowTurretRadius</li>
+        </placeWorkers>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>OIE_Adder-X_TOW_InactiveTurret</defName>
+        <label>Adder-X TOW</label>
+        <description>An inactive compact automated turret.</description>
+        <graphicData>
+            <texPath>Things/Buildings/Deployable/Adder-X/Adder-X_TOW/Adder-X_TOW_destroyed</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <drawSize>(3,3)</drawSize>
+            <color>(1,1,1)</color>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <statBases>
+            <MaxHitPoints>380</MaxHitPoints>
+            <Flammability>0.5</Flammability>
+        </statBases>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>OIE_Bullet_TOW</defName>
+        <label>TOW missile</label>
+        <drawOffscreen>true</drawOffscreen>
+        <drawerType>RealtimeOnly</drawerType>
+        <graphicData>
+            <texPath>Things/Projectile/Rocket_Big</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <thingClass>CrimsonGridFramework.Projectile_TOW</thingClass>
+        <projectile>
+            <damageDef>Bomb</damageDef>
+            <damageAmountBase>102</damageAmountBase>
+            <speed>200</speed>
+            <explosionRadius>2.9</explosionRadius>
+            <arcHeightFactor>20</arcHeightFactor>
+            <flyOverhead>false</flyOverhead>
+            <soundExplode>MortarBomb_Explode</soundExplode>
+            <soundAmbient>MortarRound_Ambient</soundAmbient>
+        </projectile>
+        <modExtensions>
+            <li Class="CrimsonGridFramework.TOWMissileExtension">
+                <maxTurnRateDegreesPerTick>3</maxTurnRateDegreesPerTick>
+                <wireAmplitude>0.12</wireAmplitude>
+                <wireSegments>24</wireSegments>
+                <wireWidth>0.03</wireWidth>
+                <wireSCount>3</wireSCount>
+                <waveAnimSpeed>0.15</waveAnimSpeed>
+                <useArcTrajectory>true</useArcTrajectory>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseWeaponTurret">
+        <defName>OIE_Adder-X_TOW_barrel</defName>
+        <label>Adder-X TOW</label>
+        <graphicData>
+            <texPath>Things/Buildings/Deployable/Adder-X/Adder-X_TOW/Adder-X_TOW_barrel</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+			<AccuracyTouch>1</AccuracyTouch>
+			<AccuracyShort>1</AccuracyShort>
+			<AccuracyMedium>1</AccuracyMedium>
+			<AccuracyLong>1</AccuracyLong>
+			<RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Mass>5</Mass>
+            <Flammability>0</Flammability>
+        </statBases>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <defaultProjectile>OIE_Bullet_TOW</defaultProjectile>
+                <warmupTime>0</warmupTime>
+                <range>42</range>
+                <burstShotCount>1</burstShotCount>
+                <soundCast>OIE_shot_TOW</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>12</muzzleFlashScale>
+            </li>
+        </verbs>
+    </ThingDef>
+
+</Defs>

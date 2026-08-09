@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="TableGatherSpotBase">
+    <defName>OIE_Table1x2c</defName>
+    <label>desk (1x2)</label>
+    <graphicData>
+      <texPath>Things/Buildings/Props/OldDesk/OldDesk</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <uiIconScale>0.8</uiIconScale>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>750</WorkToBuild>
+      <Mass>5</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>0.5</Beauty>
+    </statBases>
+    <size>(1,2)</size>
+    <defaultPlacingRot>West</defaultPlacingRot>
+    <costStuffCount>28</costStuffCount>
+  </ThingDef>
+
+  <ThingDef ParentName="LampBase">
+    <defName>OIE_DeskLamp</defName>
+    <label>desk lamp</label>
+    <description>An electrical desk lamp that lights an area. People need light to work.</description>
+    <designationHotKey>Misc11</designationHotKey>
+    <graphicData>
+      <texPath>Things/Buildings/Props/TableProps/Lamp</texPath>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+        <offset>(0,0,0.0)</offset>
+      </shadowData>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+    <costList>
+      <Steel>20</Steel>
+    </costList>
+    <statBases>
+      <Mass>4</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>30</basePowerConsumption>
+        <powerUpgrades>
+          <li>
+            <researchProject>ColoredLights</researchProject>
+            <factor>0.5</factor>
+          </li>
+        </powerUpgrades>
+      </li>
+      <li Class="CompProperties_Styleable" />
+      <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
+        <glowColor>(214,148,94,0)</glowColor>
+        <colorPickerEnabled>true</colorPickerEnabled>
+        <darklightToggle>true</darklightToggle>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="NonDeconstructibleAncientBuildingBase">
+    <defName>OIE_AirFilterBroken</defName>
+    <label>air filter</label>
+    <description>The remains of an air filter. The valuable parts were looted long ago.</description>
+    <graphicData>
+      <texPath>Things/Buildings/Props/AirFilter/AirFilterBroken</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+    <size>(1, 1)</size>
+    <fillPercent>0.4</fillPercent>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+    </statBases>
+    <killedLeavings>
+      <ChunkSlagSteel>1</ChunkSlagSteel>
+    </killedLeavings>
+  </ThingDef>
+
+  <ThingDef ParentName="NonDeconstructibleAncientBuildingBase">
+    <defName>OIE_AirFilterPristineGroundPart</defName>
+    <label>air filter</label>
+    <description>The remains of an air filter. The valuable parts were looted long ago.</description>
+    <graphicData>
+      <texPath>Things/Buildings/Props/AirFilter/AirFilterPristineGroundPart</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1, 1)</drawSize>
+    </graphicData>
+    <size>(1, 1)</size>
+    <fillPercent>0.4</fillPercent>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+    </statBases>
+    <killedLeavings>
+      <ChunkSlagSteel>1</ChunkSlagSteel>
+    </killedLeavings>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>OIE_AirFilterPristineWallPart</defName>
+    <label>air filter</label>
+    <description>The remains of an air filter. The valuable parts were looted long ago.</description>
+    <graphicData>
+      <texPath>Things/Buildings/Props/AirFilter/AirFilterPristineWallPart</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3, 3)</drawSize>
+      <drawOffset>(0, 0, 1)</drawOffset>
+    </graphicData>
+    <size>(1, 1)</size>
+    <passability>PassThroughOnly</passability>
+    <pathCost>0</pathCost>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <building>
+      <isEdifice>false</isEdifice>
+      <isAttachment>true</isAttachment>
+    </building>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+    </statBases>
+    <killedLeavings>
+      <ChunkSlagSteel>1</ChunkSlagSteel>
+    </killedLeavings>
+  </ThingDef>
+
+</Defs>
