@@ -6,7 +6,7 @@
 	</supportedVersions>
 	<modDependencies>
 		<li>
-			<packageId>Crimson.Grid.Framework</packageId>
+			<packageId>nalzurin.crimsongridframework</packageId>
 			<displayName>CrimsonGrid Framework</displayName>
 			<steamWorkshopUrl></steamWorkshopUrl>
 			<downloadUrl></downloadUrl>

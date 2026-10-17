@@ -1,20 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Operation - Iron Echo</name>
-	<author>Nikolas Makarov</author>
+	<name>Operation: Iron Echo PL</name>
+	<author>Crimson Corps</author>
 	<supportedVersions>
-		<li>1.4</li>
-		<li>1.5</li>
 		<li>1.6</li>
 	</supportedVersions>
-	<packageId>Op.I.E</packageId>
-	<description>Expand your RimWorld colony with a variety of greenbud products! Grow, trade, and process greenbuds, each with unique effects on your pawns.
-
-Some sound files and textures in this mod can excluded from our intellectual property. Will be removed if requested by the original author.
-
-The rest of visual assets, including textures, models, and any other graphical elements, are the intellectual property of © 2025 Crimson Corps. and are protected under copyright law. Any unauthorized use, reproduction, or distribution of these assets is strictly prohibited.
-	</description>
+	<modDependencies>
+		<li>
+			<packageId>nalzurin.crimsongridframework</packageId>
+			<displayName>CrimsonGrid Framework</displayName>
+			<steamWorkshopUrl></steamWorkshopUrl>
+			<downloadUrl></downloadUrl>
+		</li>
+	</modDependencies>
+	<modIconPath IgnoreIfNoMatchingField="True">UI/PL_Logo</modIconPath>
+	<packageId>Crimson.Operation.Iron.Echo</packageId>
+	<loadBefore>
+	</loadBefore>
 	<loadAfter>
-		<li>Ludeon.RimWorld</li>
 	</loadAfter>
+	<description>
+	</description>
 </ModMetaData>
