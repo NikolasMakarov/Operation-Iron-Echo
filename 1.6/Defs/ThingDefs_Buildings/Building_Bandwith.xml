@@ -8,11 +8,11 @@
 		<thingClass>Building</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Things/Buildings/Provider/ColdWar_SuperComputer</texPath>
+			<texPath>Things/Buildings/Provider/OIE_SuperComputer</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(4.5,4.5)</drawSize>
 			<shadowData>
-				<volume>(2.93,2,2.69)</volume>
+				<volume>(2.3,2,1)</volume>
 				<offset>(-0.03,0,-0.1)</offset>
 			</shadowData>
 		</graphicData>
@@ -60,11 +60,11 @@
 						<additionalPowerDraw>0</additionalPowerDraw>
 						<AdditionalHeatPerSecond>0</AdditionalHeatPerSecond>
 						<graphicData>
-							<texPath>Things/Buildings/Provider/ColdWar_SuperComputer</texPath>
+							<texPath>Things/Buildings/Provider/OIE_SuperComputer</texPath>
 							<graphicClass>Graphic_Multi</graphicClass>
-              <drawSize>(4.5,4.5)</drawSize>
-              <shadowData>
-                <volume>(2.93,2,2.69)</volume>
+							<drawSize>(4.5,4.5)</drawSize>
+							<shadowData>
+								<volume>(2.3,2,1)</volume>
 								<offset>(-0.03,0,-0.1)</offset>
 							</shadowData>
 						</graphicData>
@@ -72,14 +72,14 @@
 					<li>
 						<workAmount>2500</workAmount>
 						<additionalBandwidth>2</additionalBandwidth>
-						<additionalPowerDraw>250</additionalPowerDraw>
-						<AdditionalHeatPerSecond>10</AdditionalHeatPerSecond>
+						<additionalPowerDraw>50</additionalPowerDraw>
+						<AdditionalHeatPerSecond>5</AdditionalHeatPerSecond>
 						<graphicData>
-							<texPath>Things/Buildings/Provider/ColdWar_SuperComputer</texPath>
+							<texPath>Things/Buildings/Provider/OIE_SuperComputer</texPath>
 							<graphicClass>Graphic_Multi</graphicClass>
-              <drawSize>(4.5,4.5)</drawSize>
-              <shadowData>
-                <volume>(2.93,2,2.69)</volume>
+							<drawSize>(4.5,4.5)</drawSize>
+							<shadowData>
+								<volume>(2.3,2,1)</volume>
 								<offset>(-0.03,0,-0.1)</offset>
 							</shadowData>
 						</graphicData>
@@ -91,14 +91,14 @@
 					<li>
 						<workAmount>2500</workAmount>
 						<additionalBandwidth>4</additionalBandwidth>
-						<additionalPowerDraw>250</additionalPowerDraw>
-						<AdditionalHeatPerSecond>10</AdditionalHeatPerSecond>
+						<additionalPowerDraw>50</additionalPowerDraw>
+						<AdditionalHeatPerSecond>5</AdditionalHeatPerSecond>
 						<graphicData>
-							<texPath>Things/Buildings/Provider/ColdWar_SuperComputer</texPath>
+							<texPath>Things/Buildings/Provider/OIE_SuperComputer</texPath>
 							<graphicClass>Graphic_Multi</graphicClass>
-              <drawSize>(4.5,4.5)</drawSize>
-              <shadowData>
-                <volume>(2.93,2,2.69)</volume>
+							<drawSize>(4.5,4.5)</drawSize>
+							<shadowData>
+								<volume>(2.3,2,1)</volume>
 								<offset>(-0.03,0,-0.1)</offset>
 							</shadowData>
 						</graphicData>
@@ -110,14 +110,14 @@
 					<li>
 						<workAmount>2500</workAmount>
 						<additionalBandwidth>6</additionalBandwidth>
-						<additionalPowerDraw>250</additionalPowerDraw>
-						<AdditionalHeatPerSecond>10</AdditionalHeatPerSecond>
+						<additionalPowerDraw>50</additionalPowerDraw>
+						<AdditionalHeatPerSecond>5</AdditionalHeatPerSecond>
 						<graphicData>
-							<texPath>Things/Buildings/Provider/ColdWar_SuperComputer</texPath>
+							<texPath>Things/Buildings/Provider/OIE_SuperComputer</texPath>
 							<graphicClass>Graphic_Multi</graphicClass>
-              <drawSize>(4.5,4.5)</drawSize>
-              <shadowData>
-                <volume>(2.93,2,2.69)</volume>
+							<drawSize>(4.5,4.5)</drawSize>
+							<shadowData>
+								<volume>(2.3,2,1)</volume>
 								<offset>(-0.03,0,-0.1)</offset>
 							</shadowData>
 						</graphicData>
@@ -129,14 +129,14 @@
 					<li>
 						<workAmount>2500</workAmount>
 						<additionalBandwidth>8</additionalBandwidth>
-						<additionalPowerDraw>250</additionalPowerDraw>
+						<additionalPowerDraw>100</additionalPowerDraw>
 						<AdditionalHeatPerSecond>10</AdditionalHeatPerSecond>
 						<graphicData>
-							<texPath>Things/Buildings/Provider/ColdWar_SuperComputer</texPath>
+							<texPath>Things/Buildings/Provider/OIE_SuperComputer</texPath>
 							<graphicClass>Graphic_Multi</graphicClass>
-              <drawSize>(4.5,4.5)</drawSize>
-              <shadowData>
-                <volume>(2.93,2,2.69)</volume>
+							<drawSize>(4.5,4.5)</drawSize>
+							<shadowData>
+								<volume>(2.3,2,1)</volume>
 								<offset>(-0.03,0,-0.1)</offset>
 							</shadowData>
 						</graphicData>
@@ -148,14 +148,14 @@
 					<li>
 						<workAmount>2500</workAmount>
 						<additionalBandwidth>10</additionalBandwidth>
-						<additionalPowerDraw>250</additionalPowerDraw>
+						<additionalPowerDraw>100</additionalPowerDraw>
 						<AdditionalHeatPerSecond>10</AdditionalHeatPerSecond>
 						<graphicData>
-							<texPath>Things/Buildings/Provider/ColdWar_SuperComputer</texPath>
+							<texPath>Things/Buildings/Provider/OIE_SuperComputer</texPath>
 							<graphicClass>Graphic_Multi</graphicClass>
-              <drawSize>(4.5,4.5)</drawSize>
-              <shadowData>
-                <volume>(2.93,2,2.69)</volume>
+							<drawSize>(4.5,4.5)</drawSize>
+							<shadowData>
+								<volume>(2.3,2,1)</volume>
 								<offset>(-0.03,0,-0.1)</offset>
 							</shadowData>
 						</graphicData>
@@ -174,17 +174,17 @@
 						<PowerConsumption>0</PowerConsumption>
 					</li>
 					<li>
-						<BonusBandwidth>1</BonusBandwidth>
+						<BonusBandwidth>2</BonusBandwidth>
 						<AdditionalHeatPerSecond>2</AdditionalHeatPerSecond>
 						<PowerConsumption>50</PowerConsumption>
 					</li>
 					<li>
-						<BonusBandwidth>2</BonusBandwidth>
+						<BonusBandwidth>4</BonusBandwidth>
 						<AdditionalHeatPerSecond>4</AdditionalHeatPerSecond>
 						<PowerConsumption>150</PowerConsumption>
 					</li>
 					<li>
-						<BonusBandwidth>3</BonusBandwidth>
+						<BonusBandwidth>6</BonusBandwidth>
 						<AdditionalHeatPerSecond>8</AdditionalHeatPerSecond>
 						<PowerConsumption>250</PowerConsumption>
 					</li>
@@ -205,12 +205,12 @@
 		<thingClass>Building</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Things/Buildings/Provider/ColdWar_ServerRack</texPath>
+			<texPath>Things/Buildings/Provider/OIE_ServerRack</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<shadowData>
-				<volume>(0.93,0,0.69)</volume>
-				<offset>(-0.03,0,-0.1)</offset>
+				<volume>(0.8,0.4,0.8)</volume>
+				<offset>(0,0,0)</offset>
 			</shadowData>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
@@ -257,12 +257,12 @@
 						<additionalPowerDraw>0</additionalPowerDraw>
 						<AdditionalHeatPerSecond>0</AdditionalHeatPerSecond>
 						<graphicData>
-							<texPath>Things/Buildings/Provider/ColdWar_ServerRack</texPath>
+							<texPath>Things/Buildings/Provider/OIE_ServerRack</texPath>
 							<graphicClass>Graphic_Multi</graphicClass>
-              <drawSize>(3,3)</drawSize>
-              <shadowData>
-                <volume>(2.93,2,2.69)</volume>
-								<offset>(-0.03,0,-0.1)</offset>
+							<drawSize>(3,3)</drawSize>
+							<shadowData>
+								<volume>(0.8,0.4,0.8)</volume>
+								<offset>(0,0,0)</offset>
 							</shadowData>
 						</graphicData>
 					</li>
@@ -272,12 +272,12 @@
 						<additionalPowerDraw>250</additionalPowerDraw>
 						<AdditionalHeatPerSecond>10</AdditionalHeatPerSecond>
 						<graphicData>
-							<texPath>Things/Buildings/Provider/ColdWar_ServerRack</texPath>
+							<texPath>Things/Buildings/Provider/OIE_ServerRack</texPath>
 							<graphicClass>Graphic_Multi</graphicClass>
-              <drawSize>(3,3)</drawSize>
-              <shadowData>
-                <volume>(2.93,2,2.69)</volume>
-								<offset>(-0.03,0,-0.1)</offset>
+							<drawSize>(3,3)</drawSize>
+							<shadowData>
+								<volume>(0.8,0.4,0.8)</volume>
+								<offset>(0,0,0)</offset>
 							</shadowData>
 						</graphicData>
 						<ingredients>
@@ -291,12 +291,12 @@
 						<additionalPowerDraw>250</additionalPowerDraw>
 						<AdditionalHeatPerSecond>10</AdditionalHeatPerSecond>
 						<graphicData>
-							<texPath>Things/Buildings/Provider/ColdWar_ServerRack</texPath>
+							<texPath>Things/Buildings/Provider/OIE_ServerRack</texPath>
 							<graphicClass>Graphic_Multi</graphicClass>
-              <drawSize>(3,3)</drawSize>
-              <shadowData>
-                <volume>(2.93,2,2.69)</volume>
-								<offset>(-0.03,0,-0.1)</offset>
+							<drawSize>(3,3)</drawSize>
+							<shadowData>
+								<volume>(0.8,0.4,0.8)</volume>
+								<offset>(0,0,0)</offset>
 							</shadowData>
 						</graphicData>
 						<ingredients>
@@ -310,12 +310,12 @@
 						<additionalPowerDraw>250</additionalPowerDraw>
 						<AdditionalHeatPerSecond>10</AdditionalHeatPerSecond>
 						<graphicData>
-							<texPath>Things/Buildings/Provider/ColdWar_ServerRack</texPath>
+							<texPath>Things/Buildings/Provider/OIE_ServerRack</texPath>
 							<graphicClass>Graphic_Multi</graphicClass>
-              <drawSize>(3,3)</drawSize>
-              <shadowData>
-                <volume>(2.93,2,2.69)</volume>
-								<offset>(-0.03,0,-0.1)</offset>
+							<drawSize>(3,3)</drawSize>
+							<shadowData>
+								<volume>(0.8,0.4,0.8)</volume>
+								<offset>(0,0,0)</offset>
 							</shadowData>
 						</graphicData>
 						<ingredients>
@@ -329,12 +329,12 @@
 						<additionalPowerDraw>250</additionalPowerDraw>
 						<AdditionalHeatPerSecond>10</AdditionalHeatPerSecond>
 						<graphicData>
-							<texPath>Things/Buildings/Provider/ColdWar_ServerRack</texPath>
+							<texPath>Things/Buildings/Provider/OIE_ServerRack</texPath>
 							<graphicClass>Graphic_Multi</graphicClass>
-              <drawSize>(3,3)</drawSize>
-              <shadowData>
-                <volume>(2.93,2,2.69)</volume>
-								<offset>(-0.03,0,-0.1)</offset>
+							<drawSize>(3,3)</drawSize>
+							<shadowData>
+								<volume>(0.8,0.4,0.8)</volume>
+								<offset>(0,0,0)</offset>
 							</shadowData>
 						</graphicData>
 						<ingredients>
@@ -348,12 +348,12 @@
 						<additionalPowerDraw>250</additionalPowerDraw>
 						<AdditionalHeatPerSecond>10</AdditionalHeatPerSecond>
 						<graphicData>
-							<texPath>Things/Buildings/Provider/ColdWar_ServerRack</texPath>
+							<texPath>Things/Buildings/Provider/OIE_ServerRack</texPath>
 							<graphicClass>Graphic_Multi</graphicClass>
-              <drawSize>(3,3)</drawSize>
-              <shadowData>
-                <volume>(2.93,2,2.69)</volume>
-								<offset>(-0.03,0,-0.1)</offset>
+							<drawSize>(3,3)</drawSize>
+							<shadowData>
+								<volume>(0.8,0.4,0.8)</volume>
+								<offset>(0,0,0)</offset>
 							</shadowData>
 						</graphicData>
 						<ingredients>
@@ -371,17 +371,17 @@
 						<PowerConsumption>0</PowerConsumption>
 					</li>
 					<li>
-						<BonusBandwidth>1</BonusBandwidth>
+						<BonusBandwidth>4</BonusBandwidth>
 						<AdditionalHeatPerSecond>2</AdditionalHeatPerSecond>
 						<PowerConsumption>50</PowerConsumption>
 					</li>
 					<li>
-						<BonusBandwidth>2</BonusBandwidth>
+						<BonusBandwidth>8</BonusBandwidth>
 						<AdditionalHeatPerSecond>4</AdditionalHeatPerSecond>
 						<PowerConsumption>150</PowerConsumption>
 					</li>
 					<li>
-						<BonusBandwidth>3</BonusBandwidth>
+						<BonusBandwidth>12</BonusBandwidth>
 						<AdditionalHeatPerSecond>8</AdditionalHeatPerSecond>
 						<PowerConsumption>250</PowerConsumption>
 					</li>
@@ -390,7 +390,7 @@
 		</comps>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<designationCategory>CrimsonGrid</designationCategory>
-		<uiOrder>2100</uiOrder>
+		<uiOrder>2101</uiOrder>
 		<constructEffect>ConstructMetal</constructEffect>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	</ThingDef>
@@ -402,12 +402,12 @@
 		<thingClass>Building</thingClass>
 		<drawerType>MapMeshAndRealTime</drawerType>
 		<graphicData>
-			<texPath>Things/Buildings/Provider/Spacer_ServerRack</texPath>
+			<texPath>Things/Buildings/Provider/OIE_Spacer_ServerRack</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<shadowData>
-				<volume>(0.93,0,0.69)</volume>
-				<offset>(-0.03,0,-0.1)</offset>
+				<volume>(0.8,0.4,0.8)</volume>
+				<offset>(0,0,0)</offset>
 			</shadowData>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
@@ -455,12 +455,12 @@
 						<additionalPowerDraw>0</additionalPowerDraw>
 						<AdditionalHeatPerSecond>0</AdditionalHeatPerSecond>
 						<graphicData>
-							<texPath>Things/Buildings/Provider/Spacer_ServerRack</texPath>
+							<texPath>Things/Buildings/Provider/OIE_Spacer_ServerRack</texPath>
 							<graphicClass>Graphic_Multi</graphicClass>
-              <drawSize>(3,3)</drawSize>
-              <shadowData>
-                <volume>(2.93,2,2.69)</volume>
-								<offset>(-0.03,0,-0.1)</offset>
+							<drawSize>(3,3)</drawSize>
+							<shadowData>
+								<volume>(0.8,0.4,0.8)</volume>
+								<offset>(0,0,0)</offset>
 							</shadowData>
 						</graphicData>
 					</li>
@@ -470,12 +470,12 @@
 						<additionalPowerDraw>250</additionalPowerDraw>
 						<AdditionalHeatPerSecond>10</AdditionalHeatPerSecond>
 						<graphicData>
-							<texPath>Things/Buildings/Provider/Spacer_ServerRack</texPath>
+							<texPath>Things/Buildings/Provider/OIE_Spacer_ServerRack</texPath>
 							<graphicClass>Graphic_Multi</graphicClass>
-              <drawSize>(3,3)</drawSize>
-              <shadowData>
-                <volume>(2.93,2,2.69)</volume>
-								<offset>(-0.03,0,-0.1)</offset>
+							<drawSize>(3,3)</drawSize>
+							<shadowData>
+								<volume>(0.8,0.4,0.8)</volume>
+								<offset>(0,0,0)</offset>
 							</shadowData>
 						</graphicData>
 						<ingredients>
@@ -490,12 +490,12 @@
 						<additionalPowerDraw>250</additionalPowerDraw>
 						<AdditionalHeatPerSecond>10</AdditionalHeatPerSecond>
 						<graphicData>
-							<texPath>Things/Buildings/Provider/Spacer_ServerRack</texPath>
+							<texPath>Things/Buildings/Provider/OIE_Spacer_ServerRack</texPath>
 							<graphicClass>Graphic_Multi</graphicClass>
-              <drawSize>(3,3)</drawSize>
-              <shadowData>
-                <volume>(2.93,2,2.69)</volume>
-								<offset>(-0.03,0,-0.1)</offset>
+							<drawSize>(3,3)</drawSize>
+							<shadowData>
+								<volume>(0.8,0.4,0.8)</volume>
+								<offset>(0,0,0)</offset>
 							</shadowData>
 						</graphicData>
 						<ingredients>
@@ -514,17 +514,17 @@
 						<PowerConsumption>0</PowerConsumption>
 					</li>
 					<li>
-						<BonusBandwidth>1</BonusBandwidth>
+						<BonusBandwidth>5</BonusBandwidth>
 						<AdditionalHeatPerSecond>2</AdditionalHeatPerSecond>
 						<PowerConsumption>50</PowerConsumption>
 					</li>
 					<li>
-						<BonusBandwidth>2</BonusBandwidth>
+						<BonusBandwidth>10</BonusBandwidth>
 						<AdditionalHeatPerSecond>4</AdditionalHeatPerSecond>
 						<PowerConsumption>150</PowerConsumption>
 					</li>
 					<li>
-						<BonusBandwidth>3</BonusBandwidth>
+						<BonusBandwidth>14</BonusBandwidth>
 						<AdditionalHeatPerSecond>8</AdditionalHeatPerSecond>
 						<PowerConsumption>250</PowerConsumption>
 					</li>
@@ -533,7 +533,7 @@
 		</comps>
 		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
 		<designationCategory>CrimsonGrid</designationCategory>
-		<uiOrder>2100</uiOrder>
+		<uiOrder>2102</uiOrder>
 		<constructEffect>ConstructMetal</constructEffect>
 		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
 	</ThingDef>
